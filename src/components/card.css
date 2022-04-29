@@ -1,0 +1,53 @@
+
+.container {
+    margin: 20px 40px;  
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+
+}
+.card {
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.autor {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    background-color: skyblue;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 585px) {
+    .container {
+        margin: 20px;  
+    }
+    .title {
+        margin-top: 70px;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
